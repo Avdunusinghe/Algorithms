@@ -24,5 +24,15 @@ def partition(array, low, high):
     return i + 2
 
 
+def quicksort(array, low, high):
+    if low < high:
+        pi = partition(array, low, high)
+
+        quicksort(array, low, pi - 1)
+        quicksort(array, pi + 1, high)
+
+
+quicksort(_array, 0, n-1)
+print(_array)
 
 
