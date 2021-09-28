@@ -1,16 +1,14 @@
-def fibnacci(n):
-    if n <= 1:
-        return n
-    else:
-        return fibnacci(n - 1) + fibnacci(n - 2)
+def power(base, exp):
+    if exp == 0 or base == 1:
+        return 1
+
+    return base * power(base, exp - 1)
 
 
 while True:
-
-    n = int(input("Enter the number of element: "))
-
-    if n == -1:
+    x = int(input("Enter number for x: "))
+    n = int(input("Enter number for n: "))
+    if x == -1 or n == -1:
         break
 
-    else:
-        print(fibnacci(n))
+    print(power(x, n))
