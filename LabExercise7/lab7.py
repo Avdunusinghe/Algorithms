@@ -26,4 +26,4 @@ bubble_sort(_array)
 
 print('sorted array:')
 
-print(a)
+print(_array)
